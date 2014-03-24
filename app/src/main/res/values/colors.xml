@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ok">#22ff22</color>
+    <color name="accent">#5588ff</color>
+    <color name="mist">#66dddddd</color>
+    <color name="white">#ffffff</color>
+
+</resources>
