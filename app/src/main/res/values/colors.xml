@@ -2,6 +2,8 @@
 <resources>
 
     <color name="ok">#22ff22</color>
+    <color name="warn">#ffdd00</color>
+    <color name="error">#cc0000</color>
     <color name="label">#0099ff</color>
     <color name="accent">#5588ff</color>
     <color name="mist">#66dddddd</color>
