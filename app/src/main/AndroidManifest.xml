@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".TimelineActivity"
+            android:name=".TweetActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".TweetActivity"
+                android:name=".TimelineActivity"
                 android:label="@string/app_name" >
         </activity>
     </application>

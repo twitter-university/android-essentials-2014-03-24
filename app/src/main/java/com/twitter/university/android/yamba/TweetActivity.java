@@ -13,7 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class TweetActivity extends Activity {
+public class TweetActivity extends YambaActivity {
     private static final String TAG = "STATUS";
 
     private int okColor;
@@ -28,11 +28,11 @@ public class TweetActivity extends Activity {
     private TextView countView;
     private EditText tweetView;
 
+    public TweetActivity() { super(TAG, R.layout.activity_status); }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_status);
-        Log.d(TAG, "onCreate: " + this);
 
         Resources rez = getResources();
         okColor = rez.getColor(R.color.ok);

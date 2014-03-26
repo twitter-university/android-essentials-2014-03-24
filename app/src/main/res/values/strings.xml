@@ -2,10 +2,15 @@
 <resources>
 
     <string name="app_name">Yamba</string>
+
     <string name="tweet_label">Tweet</string>
     <string name="tweet_count">140</string>
     <string name="tweet_hint">Waz up?</string>
     <string name="tweet_submit">Submit</string>
-    <string name="tweet_success">Tweet sent!</string>
+
+    <string name="menu_tweet">Tweet</string>
+    <string name="menu_timeline">Timeline</string>
+    <string name="menu_about">About</string>
+    <string name="about_yamba">Yamba @Twitter\n    Twitter University</string>
 
 </resources>
