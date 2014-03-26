@@ -18,26 +18,12 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class TweetActivity extends Activity {
     private static final String TAG = "STATUS";
-
-    class Poster extends AsyncTask<String, Void, Integer> {
-        @Override
-        protected Integer doInBackground(String... strings) {
-
-            try { Thread.sleep(1000 * 10); }
-            catch (InterruptedException e) {}
-
-            return Integer.valueOf(R.string.tweet_success);
-        }
-
-        @Override
-        protected void onPostExecute(Integer msgId) {
-            Toast.makeText(TweetActivity.this, msgId.intValue(), Toast.LENGTH_LONG).show();
-        }
-    }
-
 
     private int okColor;
     private int warnColor;
@@ -113,7 +99,7 @@ public class TweetActivity extends Activity {
 
         tweetView.setText("");
 
-        new Poster().execute(tweet);
+        YambaService.post(this, tweet);
     }
 
     private boolean checkTweetLen(int n) {
