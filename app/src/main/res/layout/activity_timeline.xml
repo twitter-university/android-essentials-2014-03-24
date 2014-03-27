@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="@dimen/activity_horizontal_margin"
+             android:background="@drawable/background"
+             tools:context="com.twitter.university.yamba.StatusActivity"
+             tools:ignore="MergeRootFrame">
+
+    <fragment
+            android:name="com.twitter.university.android.yamba.TimelineFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</FrameLayout>

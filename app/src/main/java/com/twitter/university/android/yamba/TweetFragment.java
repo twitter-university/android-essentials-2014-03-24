@@ -43,7 +43,7 @@ public class TweetFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup root, Bundle state) {
-        View v = inflater.inflate(R.layout.fragment_status, root, false);
+        View v = inflater.inflate(R.layout.fragment_tweet, root, false);
 
         submitButton = (Button) v.findViewById(R.id.tweet_submit);
         submitButton.setOnClickListener(
